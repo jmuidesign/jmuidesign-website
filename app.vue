@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { Analytics } from '@vercel/analytics/nuxt'
+
 useHead({
   htmlAttrs: {
     class: 'scroll-smooth',
@@ -124,6 +126,7 @@ const projects = [
 </script>
 
 <template>
+  <Analytics />
   <div class="font-sans text-dark mx-auto max-w-container px-4">
     <header class="flex min-h-screen flex-col lg:justify-between lg:pb-10">
       <nav class="flex items-center justify-between py-5">
