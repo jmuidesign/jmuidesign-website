@@ -4,6 +4,7 @@ import { Analytics } from '@vercel/analytics/nuxt'
 useHead({
   htmlAttrs: {
     class: 'scroll-smooth',
+    lang: 'en',
   },
   title: 'Julien Merlin - UI Designer & Vue Developer',
   link: [
@@ -154,7 +155,7 @@ const projects = [
         </div>
       </nav>
       <div
-        class="absolute top-1/2 -translate-y-1/2 w-[calc(100%-2rem)] lg:relative lg:translate-y-0"
+        class="absolute top-1/2 -translate-y-1/2 w-[calc(100%-2rem)] lg:relative lg:translate-y-0 lg:translate-x-0 lg:w-full"
       >
         <h2 class="mb-10">Freelance UI Designer • Vue & Nuxt Developer</h2>
         <p
@@ -167,6 +168,7 @@ const projects = [
             height="60"
             src="/img/emoji.png"
             width="60"
+            alt="emoji"
           />
           I'm Julien <br />I help startups and agencies ship
           <span class="font-serif font-medium">amazing Web</span>
@@ -263,6 +265,8 @@ const projects = [
             height="120"
             src="/img/me-big.png"
             width="120"
+            alt="Julien Merlin"
+            loading="lazy"
           />
           <p
             class="text-center font-light capitalize leading-[1.3] text-[2.5rem] md:text-[3rem] lg:text-[3.5rem]"
