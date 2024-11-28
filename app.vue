@@ -103,7 +103,7 @@ const projects = [
     img: '/img/16pads.png',
     title: '16pads',
     subtitle: 'collection of sound packs',
-    tags: ['side project', 'vue', 'gsap', 'UI/UX design'],
+    tags: ['side project', 'vue', 'GSAP', 'UI/UX design'],
   },
   {
     img: '/img/betedeflow.png',
