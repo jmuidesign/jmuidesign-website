@@ -6,7 +6,7 @@ useHead({
     class: 'scroll-smooth',
     lang: 'en',
   },
-  title: 'Julien Merlin - UI Designer & Vue Developer',
+  title: 'Julien Merlin - Freelance Frontend Developer (React • Vue)',
   link: [
     {
       rel: 'icon',
@@ -18,16 +18,16 @@ useHead({
     {
       name: 'description',
       content:
-        'I help startups and agencies ship amazing Web products by bridging the gap between tech and design teams.',
+        'I help agencies build elegant web products by bridging tech and design teams.',
     },
     {
       property: 'og:title',
-      content: 'Julien Merlin - UI Designer & Vue Developer',
+      content: 'Julien Merlin - Freelance Frontend Developer (React • Vue)',
     },
     {
       property: 'og:description',
       content:
-        'I help startups and agencies ship amazing Web products by bridging the gap between tech and design teams.',
+        'I help agencies build elegant web products by bridging tech and design teams.',
     },
     {
       property: 'og:image',
@@ -43,6 +43,18 @@ useHead({
 const calendlyLink = 'https://calendly.com/jmuidesign/discovery-call'
 
 const testimonials = [
+  {
+    text: 'What particularly impressed me about Julien was his attention to detail and his commitment to excellence. He consistently provided innovative and relevant solutions, particularly in the areas of design and UX.',
+    img: '/img/julien-lc.png',
+    name: 'Julien Habibi',
+    role: 'Engeenering Manager • Le Collectionist',
+  },
+  {
+    text: 'I had the opportunity to work with Julien on several Front integration projects. Julien has a keen graphic eye and integrates designs in high fidelity. He exchanges ideas and always pushes projects to be as successful as possible.',
+    img: '/img/mathilde-lc.png',
+    name: 'Mathilde Bories',
+    role: 'Product Designer • Le Collectionist',
+  },
   {
     text: "We had a JavaScript need for a feature on our Webflow site and couldn't find any solution until we came across Julien. He quickly identified our problem and solved it in just a few hours!",
     img: '/img/samuel-octolio.png',
@@ -106,22 +118,16 @@ const projects = [
     tags: ['side project', 'vue', 'GSAP', 'UI/UX design'],
   },
   {
-    img: '/img/betedeflow.png',
-    title: 'bête de flow',
-    subtitle: 'packaged webdesign services',
-    tags: ['co-founder', 'freelance', 'UI/UX design', 'Webflow'],
-  },
-  {
-    img: '/img/idaccro.png',
-    title: 'ID accro',
-    subtitle: 'adventure park creator',
-    tags: ['freelance', 'UI/UX design', 'Webflow'],
+    img: '/img/la-cartesienne.png',
+    title: 'la cartésienne',
+    subtitle: 'Tutoring for all levels',
+    tags: ['startup', 'freelance', 'UI/UX design', 'Webflow'],
   },
   {
     img: '/img/olotropp.png',
     title: 'olotropp',
     subtitle: 'creative agency',
-    tags: ['freelance', 'UI/UX design', 'Webflow'],
+    tags: ['agency', 'freelance', 'UI/UX design', 'Webflow'],
   },
 ]
 </script>
@@ -157,7 +163,7 @@ const projects = [
       <div
         class="absolute top-1/2 -translate-y-1/2 w-[calc(100%-2rem)] lg:relative lg:translate-y-0 lg:translate-x-0 lg:w-full"
       >
-        <h2 class="mb-10">Freelance UI Designer • Vue & Nuxt Developer</h2>
+        <h2 class="mb-10">Freelance Frontend Developer (React • Vue)</h2>
         <p
           class="font-light capitalize leading-[1.3] text-[2.5rem] md:max-w-[83%] md:text-[3rem] lg:text-[3.5rem]"
         >
@@ -170,9 +176,8 @@ const projects = [
             width="60"
             alt="emoji"
           />
-          I'm Julien <br />I help startups and agencies ship
-          <span class="font-serif font-medium">amazing Web</span>
-          products by bridging the gap between
+          I'm Julien <br />
+          I help agencies build elegant web products by bridging
           <span class="font-serif font-medium">tech and design</span> teams.
         </p>
       </div>
@@ -184,33 +189,42 @@ const projects = [
       </a>
     </header>
     <section
-      class="flex flex-col gap-6 py-20 md:flex-row md:py-[7.5rem]"
+      class="flex flex-col overflow-hidden md:flex-row md:w-full md:gap-6 md:[mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
       id="testimonials"
     >
       <div
-        v-for="(testimonial, i) in testimonials"
+        v-for="i in 2"
         :key="i"
-        class="rounded-[1.5rem] border border-dark px-6 py-10"
+        :class="[
+          'flex flex-col gap-6 py-20 md:flex-row md:py-[7.5rem] md:animate-infinite-scroll',
+          { 'hidden md:flex': i === 2 },
+        ]"
       >
-        <p class="mb-6">
-          {{ testimonial.text }}
-        </p>
-        <div>
-          <NuxtImg
-            :alt="testimonial.name"
-            class="mb-4 rounded-full"
-            format="avif"
-            height="60"
-            loading="lazy"
-            :src="testimonial.img"
-            width="60"
-          />
+        <div
+          v-for="(testimonial, i) in testimonials"
+          :key="i"
+          class="rounded-[1.5rem] border border-dark px-6 py-10 flex-shrink-0 flex flex-col justify-between md:w-[400px]"
+        >
+          <p class="mb-6">
+            {{ testimonial.text }}
+          </p>
           <div>
-            <div class="mb-2 text-sm font-medium leading-none">
-              {{ testimonial.name }}
-            </div>
-            <div class="text-sm font-medium leading-none">
-              {{ testimonial.role }}
+            <NuxtImg
+              :alt="testimonial.name"
+              class="mb-4 rounded-full"
+              format="avif"
+              height="60"
+              loading="lazy"
+              :src="testimonial.img"
+              width="60"
+            />
+            <div>
+              <div class="mb-2 text-sm font-medium leading-none">
+                {{ testimonial.name }}
+              </div>
+              <div class="text-sm font-medium leading-none">
+                {{ testimonial.role }}
+              </div>
             </div>
           </div>
         </div>
