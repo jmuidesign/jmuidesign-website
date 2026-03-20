@@ -163,7 +163,7 @@ const projects = [
       <div
         class="absolute top-1/2 -translate-y-1/2 w-[calc(100%-2rem)] lg:relative lg:translate-y-0 lg:translate-x-0 lg:w-full"
       >
-        <h2 class="mb-10">Freelance Frontend Developer (React • Vue)</h2>
+        <h2 class="mb-10">Freelance Frontend Developer (Vue • Nuxt)</h2>
         <p
           class="font-light capitalize leading-[1.3] text-[2.5rem] md:max-w-[83%] md:text-[3rem] lg:text-[3.5rem]"
         >
