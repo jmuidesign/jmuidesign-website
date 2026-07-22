@@ -6,7 +6,7 @@ useHead({
     class: 'scroll-smooth',
     lang: 'en',
   },
-  title: 'Julien Merlin - Développeur Shopify Freelance | Thèmes sur mesure',
+  title: 'Julien Merlin - Freelance Shopify Developer',
   link: [
     {
       rel: 'icon',
@@ -22,7 +22,7 @@ useHead({
     },
     {
       property: 'og:title',
-      content: 'Julien Merlin - Développeur Shopify Freelance | Thèmes sur mesure',
+      content: 'Julien Merlin - Freelance Shopify Developer',
     },
     {
       property: 'og:description',
@@ -163,7 +163,7 @@ const projects = [
       <div
         class="absolute top-1/2 -translate-y-1/2 w-[calc(100%-2rem)] lg:relative lg:translate-y-0 lg:translate-x-0 lg:w-full"
       >
-        <h2 class="mb-10">Développeur Shopify Freelance</h2>
+        <h2 class="mb-10">Freelance Shopify Developer</h2>
         <p
           class="font-light capitalize leading-[1.3] text-[2.5rem] md:max-w-[83%] md:text-[3rem] lg:text-[3.5rem]"
         >
