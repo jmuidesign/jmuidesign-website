@@ -177,7 +177,7 @@ const projects = [
             alt="emoji"
           />
           I'm Julien <br />
-          I help agencies build elegant web products by bridging
+          I help agencies build elegant e-commerce by bridging
           <span class="font-serif font-medium">tech and design</span> teams.
         </p>
       </div>
