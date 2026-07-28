@@ -1,135 +1,135 @@
 <script setup lang="ts">
-import { Analytics } from '@vercel/analytics/nuxt'
+import { Analytics } from "@vercel/analytics/nuxt";
 
 useHead({
   htmlAttrs: {
-    class: 'scroll-smooth',
-    lang: 'en',
+    class: "scroll-smooth",
+    lang: "en",
   },
-  title: 'Julien Merlin - Freelance Shopify Developer',
+  title: "Julien Merlin - Freelance Shopify Developer",
   link: [
     {
-      rel: 'icon',
-      type: 'image/png',
-      href: '/favicon.png',
+      rel: "icon",
+      type: "image/png",
+      href: "/favicon.png",
     },
   ],
   meta: [
     {
-      name: 'description',
+      name: "description",
       content:
-        'I help agencies build elegant web products by bridging tech and design teams.',
+        "I help agencies build elegant web products by bridging tech and design teams.",
     },
     {
-      property: 'og:title',
-      content: 'Julien Merlin - Freelance Shopify Developer',
+      property: "og:title",
+      content: "Julien Merlin - Freelance Shopify Developer",
     },
     {
-      property: 'og:description',
+      property: "og:description",
       content:
-        'I help agencies build elegant web products by bridging tech and design teams.',
+        "I help agencies build elegant web products by bridging tech and design teams.",
     },
     {
-      property: 'og:image',
-      content: 'https://jmuidesign.com/img/og.png',
+      property: "og:image",
+      content: "https://jmuidesign.com/img/og.png",
     },
-    { property: 'og:image:width', content: '1200' },
-    { property: 'og:image:height', content: '630' },
-    { property: 'og:type', content: 'website' },
-    { property: 'og:url', content: 'https://jmuidesign.com' },
+    { property: "og:image:width", content: "1200" },
+    { property: "og:image:height", content: "630" },
+    { property: "og:type", content: "website" },
+    { property: "og:url", content: "https://jmuidesign.com" },
   ],
-})
+});
 
-const calendlyLink = 'https://calendly.com/jmuidesign/discovery-call'
+const calendlyLink = "https://calendly.com/jmuidesign/discovery-call";
 
 const testimonials = [
   {
-    text: 'What particularly impressed me about Julien was his attention to detail and his commitment to excellence. He consistently provided innovative and relevant solutions, particularly in the areas of design and UX.',
-    img: '/img/julien-lc.png',
-    name: 'Julien Habibi',
-    role: 'Engeenering Manager • Le Collectionist',
+    text: "What particularly impressed me about Julien was his attention to detail and his commitment to excellence. He consistently provided innovative and relevant solutions, particularly in the areas of design and UX.",
+    img: "/img/julien-lc.png",
+    name: "Julien Habibi",
+    role: "Engeenering Manager • Le Collectionist",
   },
   {
-    text: 'I had the opportunity to work with Julien on several Front integration projects. Julien has a keen graphic eye and integrates designs in high fidelity. He exchanges ideas and always pushes projects to be as successful as possible.',
-    img: '/img/mathilde-lc.png',
-    name: 'Mathilde Bories',
-    role: 'Product Designer • Le Collectionist',
+    text: "I had the opportunity to work with Julien on several Front integration projects. Julien has a keen graphic eye and integrates designs in high fidelity. He exchanges ideas and always pushes projects to be as successful as possible.",
+    img: "/img/mathilde-lc.png",
+    name: "Mathilde Bories",
+    role: "Product Designer • Le Collectionist",
   },
   {
     text: "We had a JavaScript need for a feature on our Webflow site and couldn't find any solution until we came across Julien. He quickly identified our problem and solved it in just a few hours!",
-    img: '/img/samuel-octolio.png',
-    name: 'Samuel Duc',
-    role: 'Co-founder • Octolio',
+    img: "/img/samuel-octolio.png",
+    name: "Samuel Duc",
+    role: "Co-founder • Octolio",
   },
   {
-    text: 'I reached out to Julien for a Javascript issue and was very satisfied with his work. Julien was proactive in offering solutions and worked quickly and efficiently. I will definitely call on his expertise again.',
-    img: '/img/jonathan.png',
-    name: 'Jonathan Faux',
-    role: 'CEO • BMF Graphisme',
+    text: "I reached out to Julien for a Javascript issue and was very satisfied with his work. Julien was proactive in offering solutions and worked quickly and efficiently. I will definitely call on his expertise again.",
+    img: "/img/jonathan.png",
+    name: "Jonathan Faux",
+    role: "CEO • BMF Graphisme",
   },
   {
-    text: 'After a bad experience with several web agencies, we met Julien. He addressed our issues with online visibility and sales perfectly. He is responsive and versatile. I highly recommend him.',
-    img: '/img/samuel-idaccro.png',
-    name: 'Samuel Simon',
-    role: 'CEO • ID Accro',
+    text: "After a bad experience with several web agencies, we met Julien. He addressed our issues with online visibility and sales perfectly. He is responsive and versatile. I highly recommend him.",
+    img: "/img/samuel-idaccro.png",
+    name: "Samuel Simon",
+    role: "CEO • ID Accro",
   },
-]
+];
 
 const projects = [
   {
-    img: '/img/lc.png',
-    title: 'le collectionist',
-    subtitle: 'luxury vacation rentals',
+    img: "/img/lc.png",
+    title: "le collectionist",
+    subtitle: "luxury vacation rentals",
     tags: [
-      'scaleup',
-      'full time position',
-      '2 years',
-      'full remote',
-      'agile team',
-      'vue',
-      'nuxt 3',
-      'typescript',
-      'unit testing',
-      'tailwind',
-      'design system',
+      "scaleup",
+      "full time position",
+      "2 years",
+      "full remote",
+      "agile team",
+      "vue",
+      "nuxt 3",
+      "typescript",
+      "unit testing",
+      "tailwind",
+      "design system",
     ],
   },
   {
-    img: '/img/orderwizz.png',
-    title: 'orderwizz',
-    subtitle: 'B2B marketplace for kids fashion',
+    img: "/img/orderwizz.png",
+    title: "orderwizz",
+    subtitle: "B2B marketplace for kids fashion",
     tags: [
-      'startup',
-      'freelance',
-      'part time',
-      '1 year',
-      'full remote',
-      'agile team',
-      'vue',
-      'sass',
-      'design system',
-      'UI/UX design',
+      "startup",
+      "freelance",
+      "part time",
+      "1 year",
+      "full remote",
+      "agile team",
+      "vue",
+      "sass",
+      "design system",
+      "UI/UX design",
     ],
   },
   {
-    img: '/img/16pads.png',
-    title: '16pads',
-    subtitle: 'collection of sound packs',
-    tags: ['side project', 'vue', 'GSAP', 'UI/UX design'],
+    img: "/img/16pads.png",
+    title: "16pads",
+    subtitle: "collection of sound packs",
+    tags: ["side project", "vue", "GSAP", "UI/UX design"],
   },
   {
-    img: '/img/la-cartesienne.png',
-    title: 'la cartésienne',
-    subtitle: 'Tutoring for all levels',
-    tags: ['startup', 'freelance', 'UI/UX design', 'Webflow'],
+    img: "/img/la-cartesienne.png",
+    title: "la cartésienne",
+    subtitle: "Tutoring for all levels",
+    tags: ["startup", "freelance", "UI/UX design", "Webflow"],
   },
   {
-    img: '/img/olotropp.png',
-    title: 'olotropp',
-    subtitle: 'creative agency',
-    tags: ['agency', 'freelance', 'UI/UX design', 'Webflow'],
+    img: "/img/olotropp.png",
+    title: "olotropp",
+    subtitle: "creative agency",
+    tags: ["agency", "freelance", "UI/UX design", "Webflow"],
   },
-]
+];
 </script>
 
 <template>
@@ -165,7 +165,7 @@ const projects = [
       >
         <h2 class="mb-10">Freelance Shopify Developer</h2>
         <p
-          class="font-light capitalize leading-[1.3] text-[2.5rem] md:max-w-[83%] md:text-[3rem] lg:text-[3.5rem]"
+          class="font-light capitalize leading-[1.3] text-[2.5rem] md:max-w-[86%] md:text-[3rem] lg:text-[3.5rem]"
         >
           Hey
           <NuxtImg
@@ -178,7 +178,7 @@ const projects = [
           />
           I'm Julien <br />
           I help agencies build elegant e-commerce by bridging
-          <span class="font-serif font-medium">tech and design</span> teams.
+          <span class="font-serif font-medium">tech and design</span>
         </p>
       </div>
       <a
@@ -306,40 +306,40 @@ const projects = [
 
 <style>
 @font-face {
-  font-family: 'DM Sans';
-  src: url('@/assets/fonts/DMSans-Light.woff2') format('woff2');
+  font-family: "DM Sans";
+  src: url("@/assets/fonts/DMSans-Light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'DM Sans';
-  src: url('@/assets/fonts/DMSans-Regular.woff2') format('woff2');
+  font-family: "DM Sans";
+  src: url("@/assets/fonts/DMSans-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'DM Sans';
-  src: url('@/assets/fonts/DMSans-Medium.woff2') format('woff2');
+  font-family: "DM Sans";
+  src: url("@/assets/fonts/DMSans-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Clash Display';
-  src: url('@/assets/fonts/ClashDisplay-Medium.woff2') format('woff2');
+  font-family: "Clash Display";
+  src: url("@/assets/fonts/ClashDisplay-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Clash Display';
-  src: url('@/assets/fonts/ClashDisplay-Semibold.woff2') format('woff2');
+  font-family: "Clash Display";
+  src: url("@/assets/fonts/ClashDisplay-Semibold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
