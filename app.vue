@@ -4,9 +4,9 @@ import { Analytics } from "@vercel/analytics/nuxt";
 useHead({
   htmlAttrs: {
     class: "scroll-smooth",
-    lang: "en",
+    lang: "fr",
   },
-  title: "Julien Merlin - Freelance Shopify Developer",
+  title: "Julien Merlin - Développeur Shopify Freelance",
   link: [
     {
       rel: "icon",
@@ -18,16 +18,16 @@ useHead({
     {
       name: "description",
       content:
-        "I help agencies build elegant web products by bridging tech and design teams.",
+        "J'aide les agences à créer des produits web élégants en faisant le lien entre les équipes tech et design.",
     },
     {
       property: "og:title",
-      content: "Julien Merlin - Freelance Shopify Developer",
+      content: "Julien Merlin - Développeur Shopify Freelance",
     },
     {
       property: "og:description",
       content:
-        "I help agencies build elegant web products by bridging tech and design teams.",
+        "J'aide les agences à créer des produits web élégants en faisant le lien entre les équipes tech et design.",
     },
     {
       property: "og:image",
@@ -44,31 +44,31 @@ const calendlyLink = "https://calendly.com/jmuidesign/discovery-call";
 
 const testimonials = [
   {
-    text: "What particularly impressed me about Julien was his attention to detail and his commitment to excellence. He consistently provided innovative and relevant solutions, particularly in the areas of design and UX.",
+    text: "Ce qui m'a particulièrement marqué chez Julien, c'est son sens du détail et son exigence. Il a toujours proposé des solutions innovantes et pertinentes, notamment en design et UX.",
     img: "/img/julien-lc.png",
     name: "Julien Habibi",
-    role: "Engeenering Manager • Le Collectionist",
+    role: "Engineering Manager • Le Collectionist",
   },
   {
-    text: "I had the opportunity to work with Julien on several Front integration projects. Julien has a keen graphic eye and integrates designs in high fidelity. He exchanges ideas and always pushes projects to be as successful as possible.",
+    text: "J'ai eu l'occasion de travailler avec Julien sur plusieurs projets d'intégration front. Julien a un vrai œil graphique et intègre les maquettes avec une grande fidélité. Il échange, partage ses idées et pousse toujours les projets vers le meilleur résultat possible.",
     img: "/img/mathilde-lc.png",
     name: "Mathilde Bories",
     role: "Product Designer • Le Collectionist",
   },
   {
-    text: "We had a JavaScript need for a feature on our Webflow site and couldn't find any solution until we came across Julien. He quickly identified our problem and solved it in just a few hours!",
+    text: "Nous avions un besoin JavaScript pour une fonctionnalité sur notre site Webflow et nous n'avions trouvé aucune solution avant de faire appel à Julien. Il a rapidement identifié notre problème et l'a résolu en quelques heures !",
     img: "/img/samuel-octolio.png",
     name: "Samuel Duc",
-    role: "Co-founder • Octolio",
+    role: "Co-fondateur • Octolio",
   },
   {
-    text: "I reached out to Julien for a Javascript issue and was very satisfied with his work. Julien was proactive in offering solutions and worked quickly and efficiently. I will definitely call on his expertise again.",
+    text: "J'ai contacté Julien pour un problème JavaScript et j'ai été très satisfait de son travail. Julien a été proactif dans ses propositions et a travaillé rapidement et efficacement. Je ferai de nouveau appel à son expertise.",
     img: "/img/jonathan.png",
     name: "Jonathan Faux",
     role: "CEO • BMF Graphisme",
   },
   {
-    text: "After a bad experience with several web agencies, we met Julien. He addressed our issues with online visibility and sales perfectly. He is responsive and versatile. I highly recommend him.",
+    text: "Après une mauvaise expérience avec plusieurs agences web, nous avons fait connaissance avec Julien. Il a parfaitement répondu à nos enjeux de visibilité en ligne et de ventes. Réactif et polyvalent, je le recommande vivement.",
     img: "/img/samuel-idaccro.png",
     name: "Samuel Simon",
     role: "CEO • ID Accro",
@@ -78,56 +78,56 @@ const testimonials = [
 const projects = [
   {
     img: "/img/lc.png",
-    title: "le collectionist",
-    subtitle: "luxury vacation rentals",
+    title: "Le Collectionist",
+    subtitle: "Location de villas de luxe",
     tags: [
-      "scaleup",
-      "full time position",
-      "2 years",
-      "full remote",
-      "agile team",
-      "vue",
-      "nuxt 3",
-      "typescript",
-      "unit testing",
-      "tailwind",
-      "design system",
+      "Scale-up",
+      "Temps Plein",
+      "2 Ans",
+      "Remote",
+      "Agile",
+      "Vue",
+      "Nuxt 3",
+      "TypeScript",
+      "Tests Unitaires",
+      "Tailwind",
+      "Design System",
     ],
   },
   {
     img: "/img/orderwizz.png",
-    title: "orderwizz",
-    subtitle: "B2B marketplace for kids fashion",
+    title: "Orderwizz",
+    subtitle: "Marketplace B2B mode enfant",
     tags: [
-      "startup",
-      "freelance",
-      "part time",
-      "1 year",
-      "full remote",
-      "agile team",
-      "vue",
-      "sass",
-      "design system",
-      "UI/UX design",
+      "Startup",
+      "Freelance",
+      "Temps Partiel",
+      "1 An",
+      "Remote",
+      "Agile",
+      "Vue",
+      "Sass",
+      "Design System",
+      "UX/UI",
     ],
   },
   {
     img: "/img/16pads.png",
     title: "16pads",
-    subtitle: "collection of sound packs",
-    tags: ["side project", "vue", "GSAP", "UI/UX design"],
+    subtitle: "Collection de packs de sons",
+    tags: ["Side Project", "Vue", "GSAP", "UX/UI"],
   },
   {
     img: "/img/la-cartesienne.png",
-    title: "la cartésienne",
-    subtitle: "Tutoring for all levels",
-    tags: ["startup", "freelance", "UI/UX design", "Webflow"],
+    title: "La Cartésienne",
+    subtitle: "Soutien scolaire tous niveaux",
+    tags: ["Startup", "Freelance", "UX/UI", "Webflow"],
   },
   {
     img: "/img/olotropp.png",
-    title: "olotropp",
-    subtitle: "creative agency",
-    tags: ["agency", "freelance", "UI/UX design", "Webflow"],
+    title: "Olotropp",
+    subtitle: "Agence créative",
+    tags: ["Agence", "Freelance", "UX/UI", "Webflow"],
   },
 ];
 </script>
@@ -150,10 +150,10 @@ const projects = [
           />
           <a
             :href="calendlyLink"
-            class="flex cursor-pointer items-center gap-2 rounded-full border border-dark px-6 py-3 text-sm font-medium capitalize leading-none transition duration-300 hover:bg-dark hover:text-white"
+            class="flex cursor-pointer items-center gap-2 rounded-full border border-dark px-6 py-3 text-sm font-medium leading-none transition duration-300 hover:bg-dark hover:text-white"
             target="_blank"
           >
-            Book a discovery call
+            Réserver un discovery call
             <span
               class="inline-block h-1 w-1 animate-pulse rounded-full bg-green-500"
             />
@@ -163,9 +163,9 @@ const projects = [
       <div
         class="absolute top-1/2 -translate-y-1/2 w-[calc(100%-2rem)] lg:relative lg:translate-y-0 lg:translate-x-0 lg:w-full"
       >
-        <h2 class="mb-10">Freelance Shopify Developer</h2>
+        <h2 class="mb-10">Développeur Shopify Freelance</h2>
         <p
-          class="font-light capitalize leading-[1.3] text-[2.5rem] md:max-w-[86%] md:text-[3rem] lg:text-[3.5rem]"
+          class="font-light leading-[1.3] text-[2.5rem] md:max-w-[83%] md:text-[3rem] lg:text-[3.5rem]"
         >
           Hey
           <NuxtImg
@@ -176,13 +176,14 @@ const projects = [
             width="60"
             alt="emoji"
           />
-          I'm Julien <br />
-          I help agencies build elegant e-commerce by bridging
-          <span class="font-serif font-medium">tech and design</span>
+          j'accompagne les agences et marques pour créer un site e-commerce
+          <span class="font-serif font-medium [word-spacing:0.15em]">
+            élégant et performant
+          </span>
         </p>
       </div>
       <a
-        class="hidden cursor-pointer text-dark text-sm font-medium capitalize leading-none lg:flex h-[180px] w-[180px] items-center justify-center self-end rounded-full border border-dark transition duration-300 hover:bg-dark hover:text-white"
+        class="hidden cursor-pointer text-dark text-sm font-medium leading-none lg:flex h-[180px] w-[180px] items-center justify-center self-end rounded-full border border-dark transition duration-300 hover:bg-dark hover:text-white"
         href="#testimonials"
       >
         Scroll
@@ -255,7 +256,7 @@ const projects = [
           <h2 class="mb-4 font-serif capitalize leading-none text-[2.5rem]">
             {{ project.title }}
           </h2>
-          <h3 class="mb-10 capitalize leading-none">{{ project.subtitle }}</h3>
+          <h3 class="mb-10 leading-none">{{ project.subtitle }}</h3>
           <div class="flex flex-wrap items-center gap-2">
             <div
               v-for="tag in project.tags"
@@ -269,9 +270,9 @@ const projects = [
       </div>
     </section>
     <section
-      class="w-full bg-white py-20 lg:sticky lg:top-0 lg:flex lg:h-screen lg:items-center lg:py-0"
+      class="w-full bg-white py-20 lg:sticky lg:top-0 lg:flex lg:h-screen lg:items-center lg:justify-center lg:py-0"
     >
-      <div class="flex flex-col items-center gap-10">
+      <div class="flex w-full flex-col items-center gap-10">
         <div class="flex flex-col items-center gap-6 md:w-8/12">
           <NuxtImg
             class="rounded-full"
@@ -283,18 +284,20 @@ const projects = [
             loading="lazy"
           />
           <p
-            class="text-center font-light capitalize leading-[1.3] text-[2.5rem] md:text-[3rem] lg:text-[3.5rem]"
+            class="text-center font-light leading-[1.3] text-[2.5rem] md:text-[3rem] lg:text-[3.5rem]"
           >
-            Let's bridge the gap between
-            <span class="font-serif font-medium">tech and design</span>
+            Créons un site e-commerce
+            <span class="font-serif font-medium [word-spacing:0.15em]">
+              élégant et performant
+            </span>
           </p>
         </div>
         <a
           :href="calendlyLink"
-          class="flex cursor-pointer items-center gap-2 rounded-full border border-dark px-9 py-[18px] text-[20px] font-medium capitalize leading-none transition duration-300 hover:bg-dark hover:text-white"
+          class="flex cursor-pointer items-center gap-2 rounded-full border border-dark px-9 py-[18px] text-[20px] font-medium leading-none transition duration-300 hover:bg-dark hover:text-white"
           target="_blank"
         >
-          Book a discovery call
+          Réserver un discovery call
           <span
             class="inline-block h-[6px] w-[6px] animate-pulse rounded-full bg-green-500"
           />
