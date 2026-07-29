@@ -81,15 +81,14 @@ const projects = [
     title: "Le Collectionist",
     subtitle: "Location de villas de luxe",
     tags: [
+      "E-commerce",
       "Scale-up",
-      "Temps Plein",
-      "2 Ans",
+      "CDI",
       "Remote",
-      "Agile",
-      "Vue",
-      "Nuxt 3",
+      "2022-2024",
+      "Vue.js",
+      "Nuxt",
       "TypeScript",
-      "Tests Unitaires",
       "Tailwind",
       "Design System",
     ],
@@ -99,14 +98,14 @@ const projects = [
     title: "Orderwizz",
     subtitle: "Marketplace B2B mode enfant",
     tags: [
+      "E-commerce",
       "Startup",
       "Freelance",
-      "Temps Partiel",
-      "1 An",
-      "Remote",
-      "Agile",
-      "Vue",
-      "Sass",
+      "Regie",
+      "2022",
+      "Vue.js",
+      "Nuxt",
+      "TypeScript",
       "Design System",
       "UX/UI",
     ],
@@ -115,7 +114,7 @@ const projects = [
     img: "/img/16pads.png",
     title: "16pads",
     subtitle: "Collection de packs de sons",
-    tags: ["Side Project", "Vue", "GSAP", "UX/UI"],
+    tags: ["Side Project", "Vue.js", "GSAP", "UX/UI"],
   },
   {
     img: "/img/la-cartesienne.png",
@@ -261,7 +260,7 @@ const projects = [
             <div
               v-for="tag in project.tags"
               :key="tag"
-              class="rounded-full border border-dark px-4 py-2 text-sm font-medium capitalize leading-none"
+              class="rounded-full border border-dark px-4 py-2 text-sm font-medium leading-none"
             >
               {{ tag }}
             </div>
