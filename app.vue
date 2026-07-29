@@ -133,8 +133,8 @@ const projects = [
 
 <template>
   <Analytics />
-  <div class="font-sans text-dark mx-auto max-w-container px-4">
-    <header class="flex min-h-screen flex-col lg:justify-between lg:pb-10">
+  <div class="font-sans text-dark relative mx-auto max-w-container px-4">
+    <header class="absolute w-full left-0 px-4 z-10">
       <nav class="flex items-center justify-between py-5">
         <h1 class="font-serif font-semibold uppercase leading-none md:text-xl">
           jmuidesign
@@ -159,150 +159,159 @@ const projects = [
           </a>
         </div>
       </nav>
-      <div
-        class="absolute top-1/2 -translate-y-1/2 w-[calc(100%-2rem)] lg:relative lg:translate-y-0 lg:translate-x-0 lg:w-full"
-      >
-        <h2 class="mb-10">Développeur Shopify Freelance</h2>
-        <p
-          class="font-light leading-[1.3] text-[2.5rem] md:max-w-[83%] md:text-[3rem] lg:text-[3.5rem]"
-        >
-          Hey
-          <NuxtImg
-            class="inline-block"
-            format="avif"
-            height="60"
-            src="/img/emoji.png"
-            width="60"
-            alt="emoji"
-          />
-          j'accompagne les agences et marques pour créer un site e-commerce
-          <span class="font-serif font-medium [word-spacing:0.15em]">
-            élégant et performant
-          </span>
-        </p>
-      </div>
-      <a
-        class="hidden cursor-pointer text-dark text-sm font-medium leading-none lg:flex h-[180px] w-[180px] items-center justify-center self-end rounded-full border border-dark transition duration-300 hover:bg-dark hover:text-white"
-        href="#testimonials"
-      >
-        Scroll
-      </a>
     </header>
-    <section
-      class="flex flex-col overflow-hidden md:flex-row md:w-full md:gap-6 md:[mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
-      id="testimonials"
-    >
-      <div
-        v-for="i in 2"
-        :key="i"
-        :class="[
-          'flex flex-col gap-6 py-20 md:flex-row md:py-[7.5rem] md:animate-infinite-scroll',
-          { 'hidden md:flex': i === 2 },
-        ]"
+    <main>
+      <section
+        class="relative flex min-h-screen flex-col lg:justify-between lg:pb-10"
       >
+        <div class="hidden shrink-0 py-5 lg:block" aria-hidden="true">
+          <div class="h-[60px]" />
+        </div>
         <div
-          v-for="(testimonial, i) in testimonials"
-          :key="i"
-          class="rounded-[1.5rem] border border-dark px-6 py-10 flex-shrink-0 flex flex-col justify-between md:w-[400px]"
+          class="absolute top-1/2 w-[calc(100%-2rem)] -translate-y-1/2 lg:relative lg:w-full lg:translate-x-0 lg:translate-y-0"
         >
-          <p class="mb-6">
-            {{ testimonial.text }}
-          </p>
-          <div>
+          <h2 class="mb-10">Développeur Shopify Freelance</h2>
+          <p
+            class="font-light leading-[1.3] text-[2.5rem] md:max-w-[83%] md:text-[3rem] lg:text-[3.5rem]"
+          >
+            Hey
             <NuxtImg
-              :alt="testimonial.name"
-              class="mb-4 rounded-full"
+              class="inline-block"
               format="avif"
               height="60"
-              loading="lazy"
-              :src="testimonial.img"
+              src="/img/emoji.png"
               width="60"
+              alt="emoji"
             />
-            <div>
-              <div class="mb-2 text-sm font-medium leading-none">
-                {{ testimonial.name }}
-              </div>
-              <div class="text-sm font-medium leading-none">
-                {{ testimonial.role }}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section
-      v-for="(project, i) in projects"
-      :key="i"
-      class="w-full bg-white py-20 lg:sticky lg:top-0 lg:flex lg:h-screen lg:items-center lg:py-0"
-    >
-      <div
-        class="lg:flex-1 md:flex gap-6 justify-between"
-        :class="{ 'md:flex-row-reverse': i % 2 !== 0 }"
-      >
-        <NuxtImg
-          :alt="project.title"
-          class="mb-10 w-full rounded-[1.25rem] md:mb-0 md:w-1/2"
-          format="avif"
-          height="1932"
-          loading="lazy"
-          quality="100"
-          sizes="sm:100vw md:50vw"
-          :src="project.img"
-          width="1932"
-        />
-
-        <div class="pt-0 md:w-1/2 md:pt-10 lg:w-5/12 lg:pt-20">
-          <h2 class="mb-4 font-serif capitalize leading-none text-[2.5rem]">
-            {{ project.title }}
-          </h2>
-          <h3 class="mb-10 leading-none">{{ project.subtitle }}</h3>
-          <div class="flex flex-wrap items-center gap-2">
-            <div
-              v-for="tag in project.tags"
-              :key="tag"
-              class="rounded-full border border-dark px-4 py-2 text-sm font-medium leading-none"
-            >
-              {{ tag }}
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section
-      class="w-full bg-white py-20 lg:sticky lg:top-0 lg:flex lg:h-screen lg:items-center lg:justify-center lg:py-0"
-    >
-      <div class="flex w-full flex-col items-center gap-10">
-        <div class="flex flex-col items-center gap-6 md:w-8/12">
-          <NuxtImg
-            class="rounded-full"
-            format="avif"
-            height="120"
-            src="/img/me-big.png"
-            width="120"
-            alt="Julien Merlin"
-            loading="lazy"
-          />
-          <p
-            class="text-center font-light leading-[1.3] text-[2.5rem] md:text-[3rem] lg:text-[3.5rem]"
-          >
-            Créons un site e-commerce
+            j'accompagne les agences et marques pour créer un site e-commerce
             <span class="font-serif font-medium [word-spacing:0.15em]">
               élégant et performant
             </span>
           </p>
         </div>
         <a
-          :href="calendlyLink"
-          class="flex cursor-pointer items-center gap-2 rounded-full border border-dark px-9 py-[18px] text-[20px] font-medium leading-none transition duration-300 hover:bg-dark hover:text-white"
-          target="_blank"
+          class="hidden cursor-pointer text-dark text-sm font-medium leading-none lg:flex h-[180px] w-[180px] items-center justify-center self-end rounded-full border border-dark transition duration-300 hover:bg-dark hover:text-white"
+          href="#testimonials"
         >
-          Réserver un discovery call
-          <span
-            class="inline-block h-[6px] w-[6px] animate-pulse rounded-full bg-green-500"
-          />
+          Scroll
         </a>
-      </div>
-    </section>
+      </section>
+      <section
+        class="flex flex-col overflow-hidden md:flex-row md:w-full md:gap-6 md:[mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
+        id="testimonials"
+      >
+        <div
+          v-for="i in 2"
+          :key="i"
+          :class="[
+            'flex flex-col gap-6 py-20 md:flex-row md:py-[7.5rem] md:animate-infinite-scroll',
+            { 'hidden md:flex': i === 2 },
+          ]"
+        >
+          <div
+            v-for="(testimonial, i) in testimonials"
+            :key="i"
+            class="rounded-[1.5rem] border border-dark px-6 py-10 flex-shrink-0 flex flex-col justify-between md:w-[400px]"
+          >
+            <p class="mb-6">
+              {{ testimonial.text }}
+            </p>
+            <div>
+              <NuxtImg
+                :alt="testimonial.name"
+                class="mb-4 rounded-full"
+                format="avif"
+                height="60"
+                loading="lazy"
+                :src="testimonial.img"
+                width="60"
+              />
+              <div>
+                <div class="mb-2 text-sm font-medium leading-none">
+                  {{ testimonial.name }}
+                </div>
+                <div class="text-sm font-medium leading-none">
+                  {{ testimonial.role }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        v-for="(project, i) in projects"
+        :key="i"
+        class="w-full bg-white py-20 lg:sticky lg:top-0 lg:flex lg:h-screen lg:items-center lg:py-0"
+      >
+        <div
+          class="lg:flex-1 md:flex gap-6 justify-between"
+          :class="{ 'md:flex-row-reverse': i % 2 !== 0 }"
+        >
+          <NuxtImg
+            :alt="project.title"
+            class="mb-10 w-full rounded-[1.25rem] md:mb-0 md:w-1/2"
+            format="avif"
+            height="1932"
+            loading="lazy"
+            quality="100"
+            sizes="sm:100vw md:50vw"
+            :src="project.img"
+            width="1932"
+          />
+
+          <div class="pt-0 md:w-1/2 md:pt-10 lg:w-5/12 lg:pt-20">
+            <h2 class="mb-4 font-serif capitalize leading-none text-[2.5rem]">
+              {{ project.title }}
+            </h2>
+            <h3 class="mb-10 leading-none">{{ project.subtitle }}</h3>
+            <div class="flex flex-wrap items-center gap-2">
+              <div
+                v-for="tag in project.tags"
+                :key="tag"
+                class="rounded-full border border-dark px-4 py-2 text-sm font-medium leading-none"
+              >
+                {{ tag }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="w-full bg-white py-20 lg:sticky lg:top-0 lg:flex lg:h-screen lg:items-center lg:justify-center lg:py-0"
+      >
+        <div class="flex w-full flex-col items-center gap-10">
+          <div class="flex flex-col items-center gap-6 md:w-8/12">
+            <NuxtImg
+              class="rounded-full"
+              format="avif"
+              height="120"
+              src="/img/me-big.png"
+              width="120"
+              alt="Julien Merlin"
+              loading="lazy"
+            />
+            <p
+              class="text-center font-light leading-[1.3] text-[2.5rem] md:text-[3rem] lg:text-[3.5rem]"
+            >
+              Créons un site e-commerce
+              <span class="font-serif font-medium [word-spacing:0.15em]">
+                élégant et performant
+              </span>
+            </p>
+          </div>
+          <a
+            :href="calendlyLink"
+            class="flex cursor-pointer items-center gap-2 rounded-full border border-dark px-9 py-[18px] text-[20px] font-medium leading-none transition duration-300 hover:bg-dark hover:text-white"
+            target="_blank"
+          >
+            Réserver un discovery call
+            <span
+              class="inline-block h-[6px] w-[6px] animate-pulse rounded-full bg-green-500"
+            />
+          </a>
+        </div>
+      </section>
+    </main>
   </div>
 </template>
 
