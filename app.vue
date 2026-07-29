@@ -79,7 +79,7 @@ const projects = [
   {
     img: "/img/casa dalia.png",
     title: "Casa Dalia",
-    subtitle: "Huile d'olive extra vierge d'Andalousie",
+    subtitle: "Marque huile d'olive premium",
     tags: ["E-commerce", "Freelance", "Shopify", "UX/UI"],
   },
   {
