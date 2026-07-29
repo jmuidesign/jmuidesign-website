@@ -18,7 +18,7 @@ useHead({
     {
       name: "description",
       content:
-        "J'aide les agences à créer des produits web élégants en faisant le lien entre les équipes tech et design.",
+        "J'accompagne les agences et marques pour créer un site e-commerce élégant et performant",
     },
     {
       property: "og:title",
@@ -27,7 +27,7 @@ useHead({
     {
       property: "og:description",
       content:
-        "J'aide les agences à créer des produits web élégants en faisant le lien entre les équipes tech et design.",
+        "J'accompagne les agences et marques pour créer un site e-commerce élégant et performant",
     },
     {
       property: "og:image",
