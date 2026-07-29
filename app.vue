@@ -77,6 +77,12 @@ const testimonials = [
 
 const projects = [
   {
+    img: "/img/casa dalia.png",
+    title: "Casa Dalia",
+    subtitle: "Huile d'olive extra vierge d'Andalousie",
+    tags: ["E-commerce", "Freelance", "Shopify", "UX/UI"],
+  },
+  {
     img: "/img/lc.png",
     title: "Le Collectionist",
     subtitle: "Location de villas de luxe",
@@ -121,12 +127,6 @@ const projects = [
     title: "La Cartésienne",
     subtitle: "Soutien scolaire tous niveaux",
     tags: ["Startup", "Freelance", "UX/UI", "Webflow"],
-  },
-  {
-    img: "/img/olotropp.png",
-    title: "Olotropp",
-    subtitle: "Agence créative",
-    tags: ["Agence", "Freelance", "UX/UI", "Webflow"],
   },
 ];
 </script>
@@ -251,12 +251,12 @@ const projects = [
             :alt="project.title"
             class="mb-10 w-full rounded-[1.25rem] md:mb-0 md:w-1/2"
             format="avif"
-            height="1932"
+            height="1288"
+            width="1288"
             loading="lazy"
             quality="100"
             sizes="sm:100vw md:50vw"
             :src="project.img"
-            width="1932"
           />
 
           <div class="pt-0 md:w-1/2 md:pt-10 lg:w-5/12 lg:pt-20">
